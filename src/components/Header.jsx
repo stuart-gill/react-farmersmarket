@@ -11,7 +11,7 @@ function Header() {
           }
         `}
       </style>
-      <h1>Helpish Queue!!</h1>
+      <h1>Farmers Market!!</h1>
     </div>
   );
 }
