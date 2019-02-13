@@ -280,7 +280,7 @@ function ProduceByMonth() {
         <Month
           name={month.name}
           produce={month.produce.map((individualProduct, index) => (
-            <Produce name={individualProduct.name} key={index} />
+            <Produce name={individualProduct} key={index} />
           ))}
           key={index}
         />
