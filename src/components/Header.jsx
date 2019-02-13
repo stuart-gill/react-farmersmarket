@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -12,6 +13,8 @@ function Header() {
         `}
       </style>
       <h1>Farmers Market!!</h1>
+      <Link to="/schedule">Weekly Schedule</Link> |{" "}
+      <Link to="/producebymonth">Produce By Month</Link>
     </div>
   );
 }

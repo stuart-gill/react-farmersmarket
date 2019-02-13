@@ -6,7 +6,11 @@ function Month(props) {
   return (
     <div>
       <h2>{props.name}</h2>
-      <h3>{props.produce}</h3>
+      <ul>
+        {props.produce.map((produce, index) => (
+          <li key={index}>{produce}</li>
+        ))}
+      </ul>
     </div>
   );
 }

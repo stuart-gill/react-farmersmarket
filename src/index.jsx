@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
+import { HashRouter } from "react-router-dom";
 
 //wrapper component that handles reloading and sending errors
 import { AppContainer } from "react-hot-loader";
@@ -8,7 +9,9 @@ import { AppContainer } from "react-hot-loader";
 const render = Component => {
   ReactDOM.render(
     <AppContainer>
-      <Component />
+      <HashRouter>
+        <Component />
+      </HashRouter>
     </AppContainer>,
     document.getElementById("react-app-root")
   );

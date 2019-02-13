@@ -2,11 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function Produce(props) {
-  return (
-    <div>
-      <h4>{props.name}</h4>
-    </div>
-  );
+  return <div>{props.name}</div>;
 }
 
 Produce.propTypes = {

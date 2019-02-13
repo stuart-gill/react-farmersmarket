@@ -1,6 +1,5 @@
 import React from "react";
 import Month from "./Month";
-import Produce from "./Produce";
 
 const produceByMonthList = [
   {
@@ -271,19 +270,13 @@ const produceByMonthList = [
   }
 ];
 
-//this is an attempt at nested mapping... getting data from producebymonthlist to transfer to month components and the produce components nested within them. It mostly works on the front end, except the name props of produce are not being communicated to the produce components
+//previously had mapping nested here; now I switched produce mapping to be in the month component
 
 function ProduceByMonth() {
   return (
     <div>
       {produceByMonthList.map((month, index) => (
-        <Month
-          name={month.name}
-          produce={month.produce.map((individualProduct, index) => (
-            <Produce name={individualProduct} key={index} />
-          ))}
-          key={index}
-        />
+        <Month name={month.name} produce={month.produce} key={index} />
       ))}
     </div>
   );
