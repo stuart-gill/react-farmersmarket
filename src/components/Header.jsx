@@ -11,6 +11,10 @@ function Header() {
             text-align: center;
             text-shadow: 2px 2px #cccccc;
           }
+          img {
+            max-width: 100%;
+            height: auto;
+          }
         `}
       </style>
       <img src={farmersImage} />
